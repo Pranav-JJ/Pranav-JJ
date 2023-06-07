@@ -1,4 +1,26 @@
-### Hi there 👋
+### Hello there 👋
+<!-- 
+I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
+
+## About Me
+
+## Projects
+
+### Project 1: 
+Description: 
+
+### Project 2: 
+Description: 
+
+## Contributions
+- 
+- 
+
+## Find Me Online
+- [Personal Website]()
+- [LinkedIn]()
+- [Twitter]() -->
+
 
 <!--
 **phoen1xsan/phoen1xsan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
