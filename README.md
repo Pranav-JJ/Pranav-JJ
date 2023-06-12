@@ -1,5 +1,4 @@
 ### Hello there 👋
-![Uploading preview.gif…]()
 <!-- 
 I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
 
