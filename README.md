@@ -1,5 +1,5 @@
 ### Hello there 👋
-![me](https://github.com/phoen1xsan/phoen1xsan/blob/main/preview.gif)
+<img src = "https://github.com/phoen1xsan/phoen1xsan/blob/main/preview.gif" width = "512" />
 <!-- 
 I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
 
