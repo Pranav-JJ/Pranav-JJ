@@ -1,6 +1,6 @@
 ## Hello there! 👋
 <br/>
-I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. I love exploring new tools and technologies that fascinate me and use them for developing applications. I'm always on the lookout for new learning opportunities and enjoy coming up with new projects to work on.
+I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. I love exploring new tools and technologies that fascinate me. I am always on the lookout for new learning opportunities and enjoy coming up with new projects to work on.
 
 My primary interests lie in the fields of **Artificial Intelligence** and **Machine Learning**, particularly the fields of **Natural Language Processing (NLP)** and **Generative AI**.
 <br>
