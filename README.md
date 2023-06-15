@@ -1,5 +1,6 @@
 ### Hello there 👋
-![me](https://github.com/phoen1xsan/phoen1xsan/blob/main/preview.gif)
+### About me
+![About me](https://github.com/phoen1xsan/phoen1xsan/blob/main/preview.gif)
 <!-- 
 I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
 
