@@ -1,6 +1,11 @@
-### Hello there 👋
+## Hello there! 👋
+<br/>
+I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. I love exploring new tools and technologies that fascinate me and use them for developing applications. I'm always on the lookout for new learning opportunities and enjoy coming up with new projects to work on.
 
-<img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
+My primary interests lie in the fields of **Artificial Intelligence** and **Machine Learning**, particularly the fields of **Natural Language Processing (NLP)** and **Generative AI**.
+<br>
+
+<!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
 <!-- 
 I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
 
