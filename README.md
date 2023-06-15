@@ -1,6 +1,6 @@
 ### Hello there 👋
-### About me
-![About me](https://github.com/phoen1xsan/phoen1xsan/blob/main/preview.gif)
+
+<img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
 <!-- 
 I'm Pranav Joshi, an undergraduate at VIT Pune, studying Computer Engineering
 
