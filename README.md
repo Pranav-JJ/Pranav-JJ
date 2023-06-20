@@ -5,6 +5,9 @@ I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. I
 My primary interests lie in the fields of **Artificial Intelligence** and **Machine Learning**, particularly the fields of **Natural Language Processing (NLP)** and **Generative AI**.
 <br>
 
+##GitHub Stats
+[![GitHub Streak](https://streak-stats.demolab.com?user=phoen1xsan&theme=dracula&hide_border=true&border_radius=7&card_width=800)](https://git.io/streak-stats)
+
 <!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
 
 <!--[![Pranav Joshi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=phoen1xsan&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
