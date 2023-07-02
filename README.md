@@ -7,7 +7,7 @@ My primary interests lie in the fields of **Artificial Intelligence** and **Mach
 
 ## GitHub Stats
 [![GitHub Streak](https://streak-stats.demolab.com?user=phoen1xsan&theme=dracula&hide_border=true&border_radius=7&card_width=800)](https://git.io/streak-stats)
-[![Pranav Joshi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=phoen1xsan&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<!--[![Pranav Joshi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=phoen1xsan&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
 <!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
 
 
