@@ -6,11 +6,11 @@ My primary interests lie in the fields of **Artificial Intelligence** and **Mach
 <br>
 
 ## GitHub Stats
-[![GitHub Streak](https://streak-stats.demolab.com?user=phoen1xsan&theme=dracula&hide_border=true&border_radius=7&card_width=800)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Pranav-JJ&theme=dracula&hide_border=true&border_radius=7&card_width=800)](https://git.io/streak-stats)
 
 <br>
 
-![Pranav Joshi's GitHub stats](https://github-readme-stats.vercel.app/api?username=phoen1xsan&show_icons=true&theme=tokyonight)
+![Pranav Joshi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Pranav-JJ&show_icons=true&theme=tokyonight)
 <!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
 
 
@@ -35,8 +35,7 @@ Description:
 
 ## Find Me Online
 - [Personal Website]()
-- [LinkedIn]()
-- [Twitter]() -->
+- [LinkedIn]() -->
 
 
 <!--
