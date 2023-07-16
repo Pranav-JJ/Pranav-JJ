@@ -1,0 +1,134 @@
+/* Add your custom styles here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: black;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add additional styling for the sections as per your requirements */
+/* styles.css */
+
+/* Add other styles as per your requirements */
+
+/* Fade-in animation */
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  /* Add more animations and color stylings below */
+  
+  /* Pulse animation for the "Get in Touch" button */
+  .cta-button {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Background color and hover effect for navigation links */
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  
+  /* Zoom-in animation for portfolio items */
+  .portfolio-item {
+    animation: zoom-in 0.5s ease-in-out;
+  }
+  
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Color styling for headings and links */
+  h1, h2 {
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
