@@ -1,4 +1,4 @@
-![Profile Banner](ezgif.com-add-text.gif)
+<!--![Profile Banner](ezgif.com-add-text.gif)-->
 
 ## Hello there! 👋
 <br/>
