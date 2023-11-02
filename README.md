@@ -16,6 +16,10 @@ My primary interests lie in the fields of **Artificial Intelligence** and **Mach
 
 <br>
 
+[![An image of @phoenixsan's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/phoenixsan)](https://holopin.io/@phoenixsan)
+
+<br>
+
 ![](https://komarev.com/ghpvc/?username=Pranav-JJ&color=blueviolet)
 
 <!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
