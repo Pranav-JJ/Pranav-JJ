@@ -1,3 +1,5 @@
+<!--![Profile Banner](ezgif.com-add-text.gif)-->
+
 ## Hello there! 👋
 <br/>
 I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. I love exploring new tools and technologies that fascinate me. I am always on the lookout for new learning opportunities and enjoy coming up with new projects to work on.
@@ -11,9 +13,16 @@ My primary interests lie in the fields of **Artificial Intelligence** and **Mach
 <br>
 
 ![Pranav Joshi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Pranav-JJ&show_icons=true&theme=tokyonight)
+
+<br>
+
+[![An image of @phoenixsan's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/phoenixsan)](https://holopin.io/@phoenixsan)
+
+<br>
+
+![](https://komarev.com/ghpvc/?username=Pranav-JJ&color=blueviolet)
+
 <!--img align="center" alt="Coding" width="1000" src="https://wallpapercave.com/wp/wp5805427.gif"/>
-
-
 
 
 <!-- 
