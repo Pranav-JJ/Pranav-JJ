@@ -1,50 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Pranav Joshi</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="nav">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hello There</h1>
-            <p>I'm Pranav Joshi, a Computer Engineering Undergrad and an AI-ML enthusiast.</p>
-        </div>
-    </section>
+  <header>
+    <h1><strong>Pranav Joshi</strong></h1>
+    <p>Computer Engineering Undergrad & AI-ML Enthusiast</p>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Bio.</p>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello There👋🏻! Welcome to my portfolio. I'm Pranav Joshi, a passionate Computer Engineering undergraduate at VIT Pune. 
+        I love exploring new tools and technologies that fascinate me. I am always on the lookout for new learning opportunities 
+        and enjoy coming up with new projects to work on.
+        My primary interests lie in the fields of <strong>Artificial Intelligence</strong> and 
+        <strong>Machine Learning</strong>, particularly the fields of <strong>Natural Language Processing (NLP)</strong> 
+        and <strong>Generative AI.</strong></p>
+  </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Projects.</p>
-        </div>
-    </section>
+  <hr>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Text Extraction and Finetuning Transformers for Abstractive Summarisation</h3>
+      <p>Abstractive summarisation using the t5-base model for domains like legal documents and news.</p>
+      <a href="https://github.com/Pranav-JJ/Transformers-Abstractive-Summarisation" target="_blank">
+        <img src="github-logo.png" alt="GitHub Logo">
+        ⬅ View on GitHub
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>Driver Drowsiness Detection and Alert System Powered by Machine Learning and IoT</h3>
+      <p>Project that includes a smart alarm technique using ML and IoT for vehicles which can prevent sleepy driver
+        impairment automatically. Also includes a IoT based Energy monitoring system to check constant power supply to the original system.</p>
+      <a href="https://github.com/Pranav-JJ/Sem3-repo/tree/main/EDI" target="_blank">
+        <img src="github-logo.png" alt="GitHub Logo">
+        ⬅ View on GitHub
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>LSB Image Steganography With AES Encryption</h3>
+      <p>GUI based approach to a combination of two different techniques to maintain data confidentiality and 
+        integrity - image steganography and cryptography in the form of AES Encryption.</p>
+      <a href="https://github.com/Pranav-JJ/Sem3-repo/tree/main/OOP" target="_blank">
+        <img src="github-logo.png" alt="GitHub Logo">
+        ⬅ View on GitHub
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>EEG Signal Data Analysis for Association with Alcoholism</h3>
+      <p>Explores the intricate world of EEG (Electroencephalogram) data analysis as a powerful means to unravel 
+        the neurological complexities of alcoholism. includes ML models to classify EEG data and distinguish between alcoholics and
+        non-alcoholic control groups. </p>
+      <a href="https://github.com/Pranav-JJ/AlcAlert" target="_blank">
+        <img src="github-logo.png" alt="GitHub Logo">
+        ⬅ View on GitHub
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>VitaLife - Website for Ayurvedic Products</h3>
+      <p>A website built to not only act as a platform for the buying and selling of Ayurvedic Products but also acting as a 
+        means of raising awareness about the benefits of Ayurvedic products as well a forum to discuss about ways of raising your own
+        plants and herbs.
+      </p>
+      <a href="https://github.com/Pranav-JJ/VitaLife" target="_blank">
+        <img src="github-logo.png" alt="GitHub Logo">
+        ⬅ View on GitHub
+      </a>
+    </div>
+  </section>
+
+    <hr>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Contact Info.</p>
+        <h2>Contact Me</h2>
+        <div id="social-links">
+        <a href="https://linkedin.com/in/pranav-joshi-168298231" target="_blank">
+            <img src="linkedin-logo.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/Pranav-JJ" target="_blank">
+            <img src="github-logo.png" alt="GitHub Logo">
+        </a>
         </div>
     </section>
+  
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 | Pranav Joshi</p>
+  </footer>
+
 </body>
 </html>
