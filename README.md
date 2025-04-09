@@ -8,7 +8,7 @@ My primary interests lie in the fields of **Artificial Intelligence** and **Mach
 <br>
 
 ## GitHub Stats
-[![GitHub Streak](https://streak-stats.demolab.com?user=Pranav-JJ&theme=dracula&hide_border=true&border_radius=7&card_width=800)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Pranav-JJ)](https://git.io/streak-stats)
 
 <br>
 
