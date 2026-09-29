@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  Source for assets/img/og-image.png (1200×630 social preview).
+  To regenerate, open this file in a Chromium browser at 1200×630 and take a
+  screenshot, e.g.:
+    chrome --headless --window-size=1200,630 --screenshot=assets/img/og-image.png tools/og-image.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OG image — Pranav Joshi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=block">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; }
+    body {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 72px 80px;
+      background: radial-gradient(900px 500px at 90% -10%, rgba(114, 205, 187, 0.14), transparent 70%), #101315;
+      color: #ecebe5;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      overflow: hidden;
+    }
+    .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 44px; }
+    .mark {
+      display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px;
+      background: #ecebe5; color: #101315; font-family: "Fraunces", Georgia, serif; font-size: 24px; font-weight: 500;
+    }
+    .name { font-size: 26px; font-weight: 600; }
+    .role { color: #9aa0a2; font-family: "IBM Plex Mono", monospace; font-size: 16px; letter-spacing: 0.04em; text-transform: uppercase; }
+    h1 {
+      font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 58px; line-height: 1.05; letter-spacing: -0.015em;
+      font-variation-settings: "opsz" 144;
+    }
+    h1 em { color: #72cdbb; font-weight: 400; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 40px; }
+    .tags span {
+      padding: 5px 12px; border: 1px solid #3b434a; border-radius: 999px; color: #bec2c1;
+      font-family: "IBM Plex Mono", monospace; font-size: 15px;
+    }
+    .trace {
+      position: relative; border: 1px solid #2a3035; border-radius: 16px; background: #161a1d; overflow: hidden;
+      font-family: "IBM Plex Mono", monospace; font-size: 17px;
+    }
+    .trace::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: linear-gradient(90deg, #72cdbb, transparent 80%); }
+    .bar { display: flex; gap: 8px; padding: 16px 20px; border-bottom: 1px solid #2a3035; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #3b434a; }
+    ol { list-style: none; padding: 16px; display: grid; gap: 4px; }
+    li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 9px 10px; border-radius: 8px; }
+    li:nth-child(3), li:nth-child(4) { background: #1d2226; }
+    b { font-weight: 400; color: #9aa0a2; }
+    li:nth-child(3) b { color: #f0907a; }
+    li:nth-child(4) b, li:nth-child(5) b { color: #72cdbb; }
+    .ok { color: #8fd49b; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="brand">
+      <div class="mark">PJ</div>
+      <div>
+        <div class="name">Pranav Joshi</div>
+        <div class="role">Software Engineering · Mumbai</div>
+      </div>
+    </div>
+    <h1>I trace problems from symptom to root cause — <em>then ship the fix.</em></h1>
+    <div class="tags"><span>C# / .NET</span><span>Vue 3</span><span>SQL</span><span>Azure AD</span><span>Vault</span><span>CI/CD</span></div>
+  </div>
+  <div class="trace">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <ol>
+      <li><b>symptom</b><span>snapshots disagree</span></li>
+      <li><b>trace</b><span>UI → service → SQL</span></li>
+      <li><b>cause</b><span>aggregate reused</span></li>
+      <li><b>fix</b><span>bundle per market</span></li>
+      <li><b>verify</b><span>reconciles <span class="ok">✓</span></span></li>
+      <li><b>ship</b><span>QA → production</span></li>
+    </ol>
+  </div>
+</body>
+</html>
