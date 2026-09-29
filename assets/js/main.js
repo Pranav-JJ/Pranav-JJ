@@ -121,39 +121,39 @@
 
   var VISUALS = {
     reconcile: function () {
-      var markets = ["Market A", "Market B", "Market C"];
+      var segments = ["Segment A", "Segment B", "Segment C"];
       return (
         '<figure class="visual visual--reconcile">' +
         '<div class="recon">' +
         '<div class="recon__panel recon__panel--before">' +
         '<p class="recon__label">Before</p>' +
-        '<p class="recon__source">One aggregate bundle</p>' +
+        '<p class="recon__source">One aggregate, reused</p>' +
         '<ul class="recon__rows">' +
-        map(markets, function (m) {
+        map(segments, function (m) {
           return '<li><span>' + m + '</span><span class="recon__val">aggregate</span></li>';
         }) +
         "</ul>" +
-        '<p class="recon__result recon__result--bad"><span>≠ import snapshot</span></p>' +
+        '<p class="recon__result recon__result--bad"><span>≠ reference path</span></p>' +
         "</div>" +
         '<div class="recon__panel recon__panel--after">' +
         '<p class="recon__label">After</p>' +
-        '<p class="recon__source">One bundle per group × market</p>' +
+        '<p class="recon__source">Calculated per segment</p>' +
         '<ul class="recon__rows">' +
-        map(markets, function (m) {
+        map(segments, function (m) {
           return '<li><span>' + m + '</span><span class="recon__val">own inputs</span></li>';
         }) +
         "</ul>" +
-        '<p class="recon__result recon__result--good"><span>= import snapshot</span><span>Σ markets = aggregate</span></p>' +
+        '<p class="recon__result recon__result--good"><span>= reference path</span><span>Σ segments = total</span></p>' +
         "</div>" +
         "</div>" +
-        "<figcaption>Market rows used to inherit one aggregate bundle. Now each market is calculated from its own inputs, and the markets reconcile back to the aggregate.</figcaption>" +
+        "<figcaption>Granular rows used to inherit one aggregate result. Now each segment is calculated from its own inputs, and the segments reconcile back to the total.</figcaption>" +
         "</figure>"
       );
     },
     pipeline: function (cs) {
       return (
         '<figure class="visual">' + flow(cs.pipeline) +
-        "<figcaption>How a skill travels from a source repository to a developer's coding assistant.</figcaption>" +
+        "<figcaption>How content flows from source repositories to the tools developers use.</figcaption>" +
         "</figure>"
       );
     },
@@ -180,22 +180,22 @@
         "</header>" +
         '<div class="case__body">' +
         '<dl class="case__summary">' +
-        "<div><dt>Problem</dt><dd>" + esc(cs.problem) + "</dd></div>" +
-        "<div><dt>My part</dt><dd>" + esc(cs.role) + "</dd></div>" +
-        "<div><dt>Outcome</dt><dd>" + esc(cs.outcome) + "</dd></div>" +
+        "<div><dt>The challenge</dt><dd>" + esc(cs.problem) + "</dd></div>" +
+        "<div><dt>What I did</dt><dd>" + esc(cs.role) + "</dd></div>" +
+        '<div class="case__learned"><dt>What I learned</dt><dd>' + esc(cs.learned) + "</dd></div>" +
         "</dl>" +
         (VISUALS[cs.visual] ? VISUALS[cs.visual](cs) : "") +
         "</div>" +
         '<details class="case__more">' +
-        '<summary><span class="case__more-open">Read the full case study</span><span class="case__more-close">Hide details</span></summary>' +
+        '<summary><span class="case__more-open">Show the details</span><span class="case__more-close">Hide details</span></summary>' +
         '<div class="case__detail">' +
-        '<section class="case__did"><h4>What I did</h4><ul>' +
+        '<section class="case__did"><h4>Step by step</h4><ul>' +
         map(cs.did, function (d) { return "<li>" + esc(d) + "</li>"; }) +
         "</ul></section>" +
         '<div class="case__notes">' +
         "<section><h4>Technical approach</h4><p>" + esc(cs.approach) + "</p></section>" +
         "<section><h4>How I validated it</h4><p>" + esc(cs.validation) + "</p></section>" +
-        "<section><h4>What I learned</h4><p>" + esc(cs.learned) + "</p></section>" +
+        "<section><h4>Result</h4><p>" + esc(cs.outcome) + "</p></section>" +
         "</div></div></details>" +
         "</article>"
       );

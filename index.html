@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pranav Joshi">
   <meta property="og:title" content="Pranav Joshi — Software Engineer">
-  <meta property="og:description" content="Case studies in debugging, data correctness and delivery across C#/.NET, Vue 3, SQL, Azure AD, Vault and CI/CD — plus practical experiments in AI-assisted engineering.">
+  <meta property="og:description" content="What I&rsquo;ve learned debugging, fixing data correctness and delivering across C#/.NET, Vue 3, SQL, Azure AD, Vault and CI/CD — plus practical experiments in AI-assisted engineering.">
   <meta property="og:url" content="https://pranav-jj.github.io/Pranav-JJ/">
   <meta property="og:image" content="https://pranav-jj.github.io/Pranav-JJ/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -64,7 +64,7 @@
     <!-- Hero -->
     <section id="top" class="hero wrap" aria-labelledby="hero-title">
       <div class="hero__text">
-        <p class="eyebrow">Trainee, DnA — Software Engineering · Powai, Mumbai</p>
+        <p class="eyebrow">Software Engineering Trainee · Mumbai, India</p>
         <h1 id="hero-title" class="hero__title">I trace problems from symptom to root cause&nbsp;— <em>then ship the fix.</em></h1>
         <p class="hero__lead">
           I'm Pranav Joshi, a hands-on software engineer working across C#/.NET services, Vue and TypeScript
@@ -72,7 +72,7 @@
           I like unfamiliar enterprise systems, calculations that have to reconcile, and leaving things better documented than I found them.
         </p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#work">Read the case studies</a>
+          <a class="button button--primary" href="#work">See what I&rsquo;ve worked on</a>
           <span class="hero__links" data-links="inline"></span>
         </div>
       </div>
@@ -80,14 +80,14 @@
       <figure class="trace" aria-labelledby="trace-caption">
         <div class="trace__bar" aria-hidden="true"><span></span><span></span><span></span><code>debug-trace.log</code></div>
         <ol class="trace__lines">
-          <li><span class="trace__key">symptom</span><span class="trace__val">forecast snapshot ≠ import snapshot</span></li>
-          <li><span class="trace__key">trace</span><span class="trace__val">UI → service → snapshot → SQL</span></li>
-          <li><span class="trace__key">cause</span><span class="trace__val">aggregate reused on market rows</span></li>
-          <li><span class="trace__key">fix</span><span class="trace__val">one metrics bundle per group × market</span></li>
-          <li><span class="trace__key">verify</span><span class="trace__val">markets reconcile to aggregate <span class="trace__ok">✓</span></span></li>
+          <li><span class="trace__key">symptom</span><span class="trace__val">two capture paths disagree</span></li>
+          <li><span class="trace__key">trace</span><span class="trace__val">UI → service → SQL</span></li>
+          <li><span class="trace__key">cause</span><span class="trace__val">aggregate reused on granular rows</span></li>
+          <li><span class="trace__key">fix</span><span class="trace__val">calculate per segment</span></li>
+          <li><span class="trace__key">verify</span><span class="trace__val">segments reconcile to total <span class="trace__ok">✓</span></span></li>
           <li><span class="trace__key">ship</span><span class="trace__val">QA → release plan → production</span></li>
         </ol>
-        <figcaption id="trace-caption" class="trace__caption">How I approached a snapshot-reconciliation bug in an enterprise planning engine.</figcaption>
+        <figcaption id="trace-caption" class="trace__caption">How I approached a data-reconciliation bug in a large enterprise application.</figcaption>
       </figure>
     </section>
 
@@ -104,7 +104,7 @@
       <header class="section__head">
         <p class="section__num" aria-hidden="true">01</p>
         <h2 id="impact-title">Selected impact</h2>
-        <p class="section__intro">Outcomes first. Each card links to the case study behind it, and the label says exactly what my part was.</p>
+        <p class="section__intro">Outcomes first. Each card links to the detail behind it, and the label says exactly what my part was.</p>
       </header>
       <ul class="impact-grid" data-render="impact"></ul>
     </section>
@@ -113,8 +113,8 @@
     <section id="work" class="section wrap" aria-labelledby="work-title">
       <header class="section__head">
         <p class="section__num" aria-hidden="true">02</p>
-        <h2 id="work-title">Featured work</h2>
-        <p class="section__intro">Three case studies covering the problem, what I did, how I validated it, and what I learned. Open any one for the full detail.</p>
+        <h2 id="work-title">What I&rsquo;ve worked on &amp; learned</h2>
+        <p class="section__intro">Three areas where I learned the most: the challenge, what I did, and what I took away. Open any one for the step-by-step detail.</p>
       </header>
       <div class="cases" data-render="cases"></div>
     </section>
@@ -123,8 +123,8 @@
     <section id="more-work" class="section wrap" aria-labelledby="more-title">
       <header class="section__head">
         <p class="section__num" aria-hidden="true">03</p>
-        <h2 id="more-title">Reliability, support &amp; platform</h2>
-        <p class="section__intro">Some of the work that keeps applications running: authentication, vulnerabilities, deployments, and helping other developers ship.</p>
+        <h2 id="more-title">Delivery, reliability &amp; support</h2>
+        <p class="section__intro">The work that keeps applications running and shipping: authentication, migrations, releases, vulnerabilities, and helping other developers.</p>
       </header>
       <div data-render="more-work"></div>
     </section>
@@ -134,7 +134,7 @@
       <header class="section__head">
         <p class="section__num" aria-hidden="true">04</p>
         <h2 id="approach-title">How I work through a problem</h2>
-        <p class="section__intro">The same loop shows up across very different systems, from snapshot calculations to authentication fixes.</p>
+        <p class="section__intro">The same loop shows up across very different systems, from calculation bugs to authentication fixes.</p>
       </header>
       <ol class="approach" data-render="approach"></ol>
     </section>
@@ -144,7 +144,7 @@
       <header class="section__head">
         <p class="section__num" aria-hidden="true">05</p>
         <h2 id="toolkit-title">Technical toolkit</h2>
-        <p class="section__intro">Grouped by where I've used it, with the work that used it.</p>
+        <p class="section__intro">Grouped by area, with the kind of work I used each group for.</p>
       </header>
       <div class="toolkit" data-render="toolkit"></div>
     </section>
@@ -193,7 +193,7 @@
           </p>
           <p>
             I'm comfortable starting in an unfamiliar codebase. I read the business logic, map the moving parts,
-            and write down what I find, whether that's a functional and technical write-up of a snapshot process or a UML-style diagram of an API's object model.
+            and write down what I find, whether that's a functional and technical write-up of a calculation process or a UML-style diagram of an API's object model.
             I started out in NLP and machine learning at university, and these days that curiosity goes into practical, measured experiments with AI-assisted development.
           </p>
         </div>
