@@ -1,6 +1,6 @@
 /*
- * Renders the content in content.js into index.html and wires up the small
- * amount of interaction the page needs (mobile menu, active nav link).
+ * Renders the content in content.js into whichever page is loaded (any
+ * element with a matching data-render attribute) and wires up the mobile menu.
  */
 (function () {
   "use strict";
@@ -76,6 +76,14 @@
       });
     });
 
+    document.querySelectorAll('[data-links="text"]').forEach(function (el) {
+      el.innerHTML = data.links
+        .map(function (l) {
+          return '<a href="' + esc(l.href) + '"' + externalAttrs(l.href) + ">" + esc(l.label) + newTabHint(l.href) + "</a>";
+        })
+        .join('<span aria-hidden="true"> · </span>');
+    });
+
     document.querySelectorAll('[data-links="cards"]').forEach(function (el) {
       el.innerHTML = map(data.links, function (l) {
         return (
@@ -87,6 +95,31 @@
           "</a></li>"
         );
       });
+    });
+  }
+
+  function renderFocus(el) {
+    el.innerHTML = map(data.focus, function (f) {
+      return (
+        '<article class="focus focus--' + esc(f.id) + '" aria-labelledby="focus-' + esc(f.id) + '">' +
+        '<p class="focus__label">' + esc(f.label) + "</p>" +
+        '<h3 id="focus-' + esc(f.id) + '">' + esc(f.title) + "</h3>" +
+        '<p class="focus__body">' + esc(f.body) + "</p>" +
+        '<ul class="focus__points">' + map(f.points, function (p) { return "<li>" + esc(p) + "</li>"; }) + "</ul>" +
+        '<a class="focus__link" href="' + esc(f.href) + '">' + esc(f.cta) + ' <span aria-hidden="true">→</span></a>' +
+        "</article>"
+      );
+    });
+  }
+
+  function renderExplore(el) {
+    el.innerHTML = map(data.explore, function (x) {
+      return (
+        '<li><a class="explore__card" href="' + esc(x.href) + '">' +
+        '<span class="explore__title">' + esc(x.title) + ' <span aria-hidden="true">→</span></span>' +
+        '<span class="explore__body">' + esc(x.body) + "</span>" +
+        "</a></li>"
+      );
     });
   }
 
@@ -291,6 +324,8 @@
   }
 
   var RENDERERS = {
+    focus: renderFocus,
+    explore: renderExplore,
     impact: renderImpact,
     cases: renderCases,
     "more-work": renderMoreWork,
@@ -340,28 +375,6 @@
     // Close the menu if the viewport grows past the mobile breakpoint.
     window.matchMedia("(min-width: 56rem)").addEventListener("change", function (mq) {
       if (mq.matches) setOpen(false);
-    });
-
-    // Highlight the nav link for the section in view.
-    if (!("IntersectionObserver" in window)) return;
-    var navLinks = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
-    var byId = {};
-    navLinks.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
-
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          navLinks.forEach(function (a) { a.removeAttribute("aria-current"); });
-          var link = byId[entry.target.id];
-          if (link) link.setAttribute("aria-current", "true");
-        });
-      },
-      { rootMargin: "-45% 0px -50% 0px" }
-    );
-    Object.keys(byId).forEach(function (id) {
-      var section = document.getElementById(id);
-      if (section) observer.observe(section);
     });
   }
 
