@@ -701,6 +701,9 @@ main:focus {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--dot, var(--ink-3)) 20%, transparent);
 }
 
+.status--built { --dot: var(--s-shipped); }
+.status--solo { --dot: var(--s-shipped); }
+.status--researched { --dot: var(--s-validated); }
 .status--shipped { --dot: var(--s-shipped); }
 .status--validated { --dot: var(--s-validated); }
 .status--contributed { --dot: var(--s-contributed); }
@@ -873,13 +876,11 @@ main:focus {
 
 /* Five-card grids: 1 column → 2 columns → 6-track editorial layout. */
 @media (min-width: 40rem) {
-  .breadth,
   .toolkit,
   .projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .breadth > :last-child:nth-child(odd),
   .toolkit > :last-child:nth-child(odd),
   .projects > :last-child:nth-child(odd) {
     grid-column: 1 / -1;
@@ -887,24 +888,19 @@ main:focus {
 }
 
 @media (min-width: 64rem) {
-  .breadth,
   .toolkit,
   .projects {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .breadth > *,
   .toolkit > *,
   .projects > *,
-  .breadth > :last-child:nth-child(odd),
   .toolkit > :last-child:nth-child(odd),
   .projects > :last-child:nth-child(odd) {
     grid-column: span 2;
   }
 
   /* with five items, the last two share the second row */
-  .breadth > :nth-child(4):nth-last-child(2),
-  .breadth > :nth-child(5):last-child,
   .toolkit > :nth-child(4):nth-last-child(2),
   .toolkit > :nth-child(5):last-child,
   .projects > :nth-child(4):nth-last-child(2),
@@ -963,6 +959,7 @@ main:focus {
 
 .cases {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
@@ -1261,6 +1258,54 @@ main:focus {
   font-size: 0.8rem;
 }
 
+/* feature tiles */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 0.5rem;
+}
+
+.features li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.features li {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+}
+
+.features__label {
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.features__note {
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.case__site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.25rem;
+}
+
+.case__site-url {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
 /* reconciliation diagram */
 .recon {
   display: grid;
@@ -1417,6 +1462,21 @@ main:focus {
 .breadth {
   display: grid;
   gap: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .breadth {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .breadth {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.breadth {
   margin-top: 1rem;
 }
 

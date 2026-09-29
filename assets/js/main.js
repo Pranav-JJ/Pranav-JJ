@@ -186,7 +186,19 @@
     pipeline: function (cs) {
       return (
         '<figure class="visual">' + flow(cs.pipeline) +
-        "<figcaption>How content flows from source repositories to the tools developers use.</figcaption>" +
+        (cs.caption ? "<figcaption>" + esc(cs.caption) + "</figcaption>" : "") +
+        "</figure>"
+      );
+    },
+    features: function (cs) {
+      return (
+        '<figure class="visual">' +
+        '<ul class="features">' +
+        map(cs.features, function (f) {
+          return '<li><span class="features__label">' + esc(f.label) + '</span><span class="features__note">' + esc(f.note) + "</span></li>";
+        }) +
+        "</ul>" +
+        (cs.caption ? "<figcaption>" + esc(cs.caption) + "</figcaption>" : "") +
         "</figure>"
       );
     },
@@ -194,7 +206,7 @@
       return (
         '<figure class="visual">' + flow(cs.pipeline, "loop") +
         '<p class="flow__repeat"><span aria-hidden="true">↺</span> Repeat with the same scorecard for each assistant</p>' +
-        "<figcaption>The evaluation loop I used to compare skill behavior across assistants.</figcaption>" +
+        "<figcaption>The research loop I used to compare skill behavior across assistants.</figcaption>" +
         "</figure>"
       );
     },
@@ -210,6 +222,11 @@
         '<h3 class="case__title" id="' + titleId + '">' + esc(cs.title) + "</h3>" +
         '<p class="case__kicker">' + esc(cs.kicker) + "</p>" +
         tags(cs.tags) +
+        (cs.site
+          ? '<p class="case__site"><a class="button button--ghost" href="' + esc(cs.site.href) + '"' + externalAttrs(cs.site.href) + ">" +
+            '<span>Visit the live site</span><span aria-hidden="true">↗</span>' + newTabHint(cs.site.href) + "</a>" +
+            '<span class="case__site-url">' + esc(cs.site.label) + "</span></p>"
+          : "") +
         "</header>" +
         '<div class="case__body">' +
         '<dl class="case__summary">' +
